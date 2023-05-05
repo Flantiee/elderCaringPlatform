@@ -1,0 +1,73 @@
+server:
+  port: 8182
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  ##配置redis
+#  redis:
+#    host: 192.168.1.1
+#    port: 6379
+#    #本机没设置密码，在Linux才设置了密码
+#    #password: root@123456
+#    database: 0
+#  cache:
+#    redis:
+#      time-to-live: 1800000 #设置缓存数据的过期时间
+#  mail:
+#    #邮件发送
+#    password: pycpoifhowpmheaa
+#    username: 1500424490@qq.com
+#    #smtp服务主机  qq邮箱则为smtp.qq.com;163邮箱是smtp.163.com
+#    host: smtp.qq.com
+#    #开启加密验证
+#    properties:
+#      mail:
+#        smtp:
+#          ssl:
+#            enable: true
+#  #邮箱验证码配置
+#  mail:
+#    #smtp服务主机  qq邮箱则为smtp.qq.com;163邮箱是smtp.163.com
+#    host: smtp.qq.com
+#    port: 465
+#    #服务协议
+#    protocol: smtp
+#    # 编码集
+#    default-encoding: UTF-8
+#    #发送邮件的账户
+#    username: 1500424490@qq.com
+#    #授权码
+#    password: pycpoifhowpmheaa
+#    test-connection: false
+#    properties:
+#      mail:
+#        smtp:
+#          socketFactory:
+#            port: 465
+#            class: javax.net.ssl.SSLSocketFactory
+#            fallback: false
+#          auth: true
+#          starttls:
+#            enable: true
+#            required: true
+#          ssl:
+#            enable: true
+  application:
+    name: service_for_the_manager
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/elder?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+      username: elder
+      password: 670123
+
+mybatis-plus:
+  configuration:
+    #在映射实体或者属性时，将数据库中表名和字段名中的下划线去掉，按照驼峰命名法映射
+    map-underscore-to-camel-case: false
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+#fantast:
+#  path: /home/dockerfile/dockerfile_myproject/photo/
