@@ -1,5 +1,5 @@
 # elderCaringPlatform
  智慧居家养老服务平台  
-service_for_the_aged: 移动app(后端)  
-service_for_the_manager: 管理者后台系统(后端)  
-vue_admin: 管理者后台系统(前端)
+service_for_the_aged: mobile app (backend)  
+service_for_the_manager: web_app(backend) 
+vue_admin: web_app(backend)
